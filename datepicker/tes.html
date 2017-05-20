@@ -1,0 +1,33 @@
+<?php
+session_start();
+include 'inc/config.php';
+include 'function.php';
+if (!defined('_WAROENG_WEB_INDEX')) define('_WAROENG_WEB_INDEX', 1 );
+include 'index-head.php';
+?>
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Date Picker</title>
+        <link href="css/jquery.datepick.css" rel="stylesheet">
+        <script src="js/jquery-latest.min.js"></script>
+        <script src="js/jquery.plugin.js"></script>
+        <script src="js/jquery.datepick.js"></script>        
+        <script>
+        $(function() {
+          $('#popupDatepicker').datepick();
+          $('#inlineDatepicker').datepick({onSelect: showDate});
+        });
+
+        function showDate(date) {
+          alert('The date chosen is ' + date);
+        }
+        </script>
+    </head>
+    <body>
+<form method="post">
+Tanggal: <input type="text" name="tgl" id="popupDatepicker">
+</form>
+
+    </body>
+</html>
