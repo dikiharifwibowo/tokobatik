@@ -131,7 +131,7 @@
                 <div class="borprod">
                     <div class="produk">
                         <img src="img/<?php echo  $data['foto']; ?>" style="width: 260px; height: 180px; margin: 5px; margin-right: 5px; margin-left: 5px;" >
-                        <h2 style="color: green; margin: 5px;"><?php echo substr(strip_tags($data['judul']),0,100) ?></h2>
+                        <h4 style="color: green; margin: 5px;"><?php echo substr(strip_tags($data['judul']),0,50) ?></h4>
                         <p style="margin: 5px;"><?php echo substr(strip_tags($data['isi']),0,100) ?></p>
                         <a href="detailsberita.php?id_berita=<?php echo $data['id_berita']; ?>" class="btn btn-success">Read more</a>         
                     </div>

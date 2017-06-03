@@ -84,7 +84,7 @@ echo 'Gagal koneksi ke database';
                         <td><?php echo  $no;?></td>
                         <td><img class="buku-cover" width="50px" height="50px" src="../img/<?php echo  $r['foto']; ?>"></td>
                         <td><?php echo  $r['judul']; ?></td>
-                        <td><?php echo  $r['isi']; ?></td>
+                        <td><?php echo substr(strip_tags($r['isi']),0,100) ?></td>
                          <td>
                         <a href="berita_edit.php?id_berita=<?php echo $r['id_berita']; ?>" class="btn btn-edit">Edit</a>
                         <a href="berita_do_delete.php?id_berita=<?php echo $r['id_berita']; ?>" class="btn btn-hapus" onclick="return confirm('anda yakin akan menghapus data?');">Hapus</a>
