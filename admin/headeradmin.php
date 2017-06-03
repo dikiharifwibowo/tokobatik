@@ -141,7 +141,8 @@
 		<div class="row"></div>
 		<ul class="nav nav-pills nav-stacked">
 			<li class="active"><a href="../admin/home_admin.php"><span class="glyphicon glyphicon-home"></span>  Beranda</a></li>			
-			<li><a href="kategori.php"><span class="glyphicon glyphicon-th-list"></span>  Kategori </a></li>     				
+			<li><a href="kategori.php"><span class="glyphicon glyphicon-th-list"></span>  Kategori </a></li>
+			<li><a href="berita.php"><span class="glyphicon glyphicon-th-list"></span>  Berita</a></li>     				
 			<li><a href="produk.php"><span class="glyphicon glyphicon-tags"></span> Produk</a></li>
 			<li><a href="pelanggan.php"><span class="glyphicon glyphicon-user"></span> Pelanggan</a></li>
 			<li><a href="orderan.php"><span class="glyphicon glyphicon-shopping-cart"></span>  Orderan</a></li>

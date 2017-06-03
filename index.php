@@ -70,13 +70,13 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="img/amikom1.png" alt="...">
+                  <img src="img/slide1_2.jpeg" alt="...">
                   <div class="carousel-caption">
                     <h3>Caption Text</h3>
                   </div>
                 </div>
                 <div class="item">
-                  <img src="img/amikom2.png" alt="...">
+                  <img src="img/slide1.jpeg" alt="...">
                   <div class="carousel-caption">
                     <h3>Caption Text</h3>
                   </div>
@@ -120,6 +120,29 @@
 
             </div>
         </div>
+        <br> <h2></h2>
+        <div id="contentwrap">
+          <h2 align="center">BERITA TOKO BATIK</h2>
+            <div id="content">
+                <?php
+                   $sql = mysqli_query($db, "SELECT * FROM berita ORDER BY id_berita DESC limit 6");
+                   while($data = mysqli_fetch_array($sql)){
+                ?>
+                <div class="borprod">
+                    <div class="produk">
+                        <img src="img/<?php echo  $data['foto']; ?>" style="width: 260px; height: 180px; margin: 5px; margin-right: 5px; margin-left: 5px;" >
+                        <h2 style="color: green; margin: 5px;"><?php echo substr(strip_tags($data['judul']),0,100) ?></h2>
+                        <p style="margin: 5px;"><?php echo substr(strip_tags($data['isi']),0,100) ?></p>
+                        <a href="detailsberita.php?id_berita=<?php echo $data['id_berita']; ?>" class="btn btn-success">Read more</a>         
+                    </div>
+                </div>
+                <?php   
+                    }
+                ?>
+
+            </div>
+        </div>
+
         <div class="wadahsupport">
         <div class="support">
             <p align="center"> Support By: </p>
